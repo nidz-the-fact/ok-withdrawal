@@ -59,7 +59,7 @@ npm i -g opstack-kit
 > You can review the code for more details:  
 > [View source](https://github.com/opstack-kit/opstack-kit/blob/main/src/cli/commands/prove.ts#L5), [npm package](https://www.npmjs.com/package/opstack-kit?activeTab=code)  
 > 
-> *If you're just testing, we recommend using a freshly generated wallet to stay safe.*
+> *If you're just testing, we recommend using a new generated wallet to stay safe.*
 
 ## proveWithdrawalTransaction (on L1)
 Prove withdrawal using transaction hash, "OptimismPortal.[proveWithdrawalTransaction](https://github.com/ethereum-optimism/optimism/blob/op-contracts/v2.0.0-beta.3/packages/contracts-bedrock/src/L1/OptimismPortal.sol#L243C1-L322C6)" `L2StandardBridge` address. ([Read more](https://opstack-kit.pages.dev/docs/cli#prove-provewithdrawal))
