@@ -99,7 +99,7 @@ Finalize withdrawal using transaction hash after proving, "OptimismPortal.[final
 > Also, the `--privateKey` must start with `0x-key`. (Do not publish Privatekey public)
 
 ```
-ok prove <WithdrawalTxHashL2> \
+ok finalize <WithdrawalTxHashL2> \
 --privateKey <0x-key> \
 --chainIdL1 <id> \
 --rpcUrlL1 <url> \
