@@ -62,7 +62,7 @@ npm i -g opstack-kit
 > *If you're just testing, we recommend using a freshly generated wallet to stay safe.*
 
 ## proveWithdrawalTransaction (on L1)
-Prove withdrawal using transaction hash, "OptimismPortal.[proveWithdrawalTransaction](https://github.com/ethereum-optimism/optimism/blob/op-contracts/v2.0.0-beta.3/packages/contracts-bedrock/src/L1/OptimismPortal.sol#L243C1-L322C6)" address.
+Prove withdrawal using transaction hash, "OptimismPortal.[proveWithdrawalTransaction](https://github.com/ethereum-optimism/optimism/blob/op-contracts/v2.0.0-beta.3/packages/contracts-bedrock/src/L1/OptimismPortal.sol#L243C1-L322C6)" `L2StandardBridge` address. ([Read more](https://opstack-kit.pages.dev/docs/cli#prove-provewithdrawal))
 > [!NOTE]  
 > For **Non-Fault proofs**:  
 > `disputeGameFactory = 0x_l2OutputOracle`  
@@ -79,7 +79,7 @@ ok prove <WithdrawalTxHashL2> --privateKey <0x-key> --chainIdL1 <id> --rpcUrlL1 
 ---
 
 ## finalizeWithdrawalTransaction (on L1)
-Finalize withdrawal using transaction hash after proving, "OptimismPortal.[finalizeWithdrawalTransaction](https://github.com/ethereum-optimism/optimism/blob/op-contracts/v2.0.0-beta.3/packages/contracts-bedrock/src/L1/OptimismPortal.sol#L324C1-L444C6)" address.
+Finalize withdrawal using transaction hash after proving, "OptimismPortal.[finalizeWithdrawalTransaction](https://github.com/ethereum-optimism/optimism/blob/op-contracts/v2.0.0-beta.3/packages/contracts-bedrock/src/L1/OptimismPortal.sol#L324C1-L444C6)" address. ([Read more](https://opstack-kit.pages.dev/docs/cli#finalize-finalizewithdrawal))
 > [!NOTE]  
 > For **Non-Fault proofs**:  
 > `disputeGameFactory = 0x_l2OutputOracle`  
