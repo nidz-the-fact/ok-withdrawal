@@ -73,7 +73,16 @@ Prove withdrawal using transaction hash, "OptimismPortal.[proveWithdrawalTransac
 > Also, the `--privateKey` must start with `0x-key`.
 
 ```
-ok prove <WithdrawalTxHashL2> --privateKey <0x-key> --chainIdL1 <id> --rpcUrlL1 <url> --chainIdL2 <id> --rpcUrlL2 <url> --portal <address> --l2OutputOracle <address> --disputeGameFactory <address> --scanL1Url <url>
+ok prove <WithdrawalTxHashL2> \
+--privateKey <0x-key> \
+--chainIdL1 <id> \
+--rpcUrlL1 <url> \
+--chainIdL2 <id> \
+--rpcUrlL2 <url> \
+--portal <address> \
+--l2OutputOracle <address> \
+--disputeGameFactory <address> \
+--scanL1Url <url>
 ```
 
 ---
@@ -90,5 +99,12 @@ Finalize withdrawal using transaction hash after proving, "OptimismPortal.[final
 > Also, the `--privateKey` must start with `0x-key`.
 
 ```
-ok finalize <WithdrawalTxHashL2> --privateKey <0x-key> --chainIdL1 <id> --rpcUrlL1 <url> --chainIdL2 <id> --rpcUrlL2 <url> --portal <address> --scanL1Url <url>
+ok prove <WithdrawalTxHashL2> \
+--privateKey <0x-key> \
+--chainIdL1 <id> \
+--rpcUrlL1 <url> \
+--chainIdL2 <id> \
+--rpcUrlL2 <url> \
+--portal <address> \
+--scanL1Url <url>
 ```
