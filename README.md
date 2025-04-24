@@ -70,7 +70,7 @@ Prove withdrawal using transaction hash, "OptimismPortal.[proveWithdrawalTransac
 > For **Fault proofs**:  
 > `l2OutputOracle = 0x_disputeGameFactory`  
 >  
-> Also, the `--privateKey` must start with `0x-key`.
+> Also, the `--privateKey` must start with `0x-key`. (Do not publish Privatekey public)
 
 ```
 ok prove <WithdrawalTxHashL2> \
@@ -96,7 +96,7 @@ Finalize withdrawal using transaction hash after proving, "OptimismPortal.[final
 > For **Fault proofs**:  
 > `l2OutputOracle = 0x_disputeGameFactory`  
 >  
-> Also, the `--privateKey` must start with `0x-key`.
+> Also, the `--privateKey` must start with `0x-key`. (Do not publish Privatekey public)
 
 ```
 ok prove <WithdrawalTxHashL2> \
