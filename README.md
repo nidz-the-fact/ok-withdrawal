@@ -62,7 +62,7 @@ npm i -g opstack-kit
 > *If you're just testing, we recommend using a new generated wallet to stay safe.*
 
 ## proveWithdrawalTransaction (on L1)
-Prove withdrawal using transaction hash, "OptimismPortal.[proveWithdrawalTransaction](https://github.com/ethereum-optimism/optimism/blob/op-contracts/v2.0.0-beta.3/packages/contracts-bedrock/src/L1/OptimismPortal.sol#L243C1-L322C6)" `L2StandardBridge` address. ([Read more](https://opstack-kit.pages.dev/docs/cli#prove-provewithdrawal))
+Prove withdrawal using transaction hash, "OptimismPortal.[proveWithdrawalTransaction](https://github.com/ethereum-optimism/optimism/blob/op-contracts/v2.0.0-beta.3/packages/contracts-bedrock/src/L1/OptimismPortal.sol#L243C1-L322C6)" `L2StandardBridge`, `L2ToL1MessagePasser` address. ([Read more](https://opstack-kit.pages.dev/docs/cli#prove-provewithdrawal))
 > [!NOTE]  
 > For **Non-Fault proofs**:  
 > `disputeGameFactory = 0x_l2OutputOracle`  
@@ -70,7 +70,7 @@ Prove withdrawal using transaction hash, "OptimismPortal.[proveWithdrawalTransac
 > For **Fault proofs**:  
 > `l2OutputOracle = 0x_disputeGameFactory`  
 >  
-> Also, the `--privateKey` must start with `0x-key`. (Do not publish Privatekey public)
+> Also, the `--privateKey` must start with `0x-key`. (Do not show Privatekey)
 
 ```
 ok prove <WithdrawalTxHashL2> \
@@ -96,7 +96,7 @@ Finalize withdrawal using transaction hash after proving, "OptimismPortal.[final
 > For **Fault proofs**:  
 > `l2OutputOracle = 0x_disputeGameFactory`  
 >  
-> Also, the `--privateKey` must start with `0x-key`. (Do not publish Privatekey public)
+> Also, the `--privateKey` must start with `0x-key`. (Do not show Privatekey)
 
 ```
 ok finalize <WithdrawalTxHashL2> \
